@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                          
+    "module": "NodeNext",                        
+    "moduleResolution": "NodeNext",              // for ts to find my packages node_modules
+    "types": ["node"],
+
+    "rootDir": "./src",                          
+    "outDir": "./dist",                          
+    
+    "strict": true,                              
+    "allowJs": true,
+    "esModuleInterop": true,                     // (import express from 'express')
+    "skipLibCheck": true                         // ignore Prisma errors
+  },
+  "include": ["src/**/*"]                        // ts only for src folder
+}
